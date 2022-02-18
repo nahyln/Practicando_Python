@@ -11,10 +11,7 @@ def kadane(a, length):
         n = max(n, act)
     return n
 
-#sea el arreglo:
-A=[2,-3,2,2,0]
 
-print (kadane(A, len(A)))
 
 
 
