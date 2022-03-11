@@ -7,9 +7,10 @@ def kadane(a, length):
     act=a[0]
 
     for i in range(1, length):
-        act = max(A[i], act + A[i])
+        act = max(a[i], act + a[i])
         n = max(n, act)
     return n
+
 
 
 
