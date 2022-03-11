@@ -8,15 +8,14 @@ def bin_(n,z):
     while(True):
         m = round(l+((h-l)/2)) #fórmula para calcular el punto medio
         if(n[m] == z):
-            print(n[m])
-            break
+            return 1
         if(n[m] < z): #si punto medio es menor al número buscado, se suma 1 para mover la zona de búsqueda hacia la derecha
             l = m + 1
         if(n[m] > z): #si punto medio es menor al número buscado, se resta 1 para mover la zona de búsqueda hacia la izquierda
             h = m - 1     
         if(l > h): 
-            print("El numero no existe en el arreglo")
-            break
+            return 0
+          
         
 
 #donde A: un arreglo de números enteros.
